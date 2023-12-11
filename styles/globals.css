@@ -7,6 +7,11 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+@layer components {
+  .btn {
+    @apply bg-blue-300 text-blue-800 disabled:bg-gray-600 disabled:text-white;
+  }
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
